@@ -1,5 +1,5 @@
 %define module   MooseX-ClassAttribute
-%define version    0.04
+%define version    0.06
 %define release    %mkrel 1
 
 Name:       perl-%{module}
