@@ -13,6 +13,7 @@ Source:     http://www.cpan.org/modules/by-module/MooseX/%{module}-%{version}.ta
 BuildRequires: perl(B)
 BuildRequires: perl(Exporter)
 BuildRequires: perl(Moose)
+BuildRequires: perl(MooseX::AttributeHelpers)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Name)
 BuildRequires: perl(Test::More)
