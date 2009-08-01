@@ -1,15 +1,16 @@
-%define module   MooseX-ClassAttribute
-%define version    0.09
-%define release    %mkrel 1
+%define upstream_name    MooseX-ClassAttribute
+%define upstream_version 0.09
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Declare class attributes Moose-style
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/MooseX/%{module}-%{version}.tar.gz
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(B)
 BuildRequires: perl(Exporter)
 BuildRequires: perl(Moose)
@@ -19,7 +20,7 @@ BuildRequires: perl(Sub::Name)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build::Compat)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module allows you to declare class attributes in exactly the same way
@@ -36,7 +37,7 @@ directly, or on objects of that class. Passing a class attribute to the
 constructor will not set it.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -57,4 +58,3 @@ rm -rf %buildroot
 %doc Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/MooseX
-
