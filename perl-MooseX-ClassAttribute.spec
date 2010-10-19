@@ -19,6 +19,7 @@ BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Name)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build::Compat)
+BuildRequires: perl(namespace::autoclean)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
