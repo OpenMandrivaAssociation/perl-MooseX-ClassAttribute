@@ -20,6 +20,7 @@ BuildRequires: perl(Sub::Name)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::Requires)
+BuildRequires: perl(Test::Fatal)
 BuildRequires: perl(Module::Build::Compat)
 BuildRequires: perl(namespace::autoclean)
 BuildArch: noarch
