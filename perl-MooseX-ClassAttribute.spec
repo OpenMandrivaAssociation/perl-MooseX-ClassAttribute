@@ -1,15 +1,15 @@
 %define upstream_name    MooseX-ClassAttribute
-%define upstream_version 0.26
+%define upstream_version 0.27
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Declare class attributes Moose-style
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/MooseX/MooseX-ClassAttribute-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(B)
@@ -124,3 +124,4 @@ make test
 
 * Wed Jul 16 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.04-1mdv2009.0
 - initial mdv release, generated with cpan2dist
+

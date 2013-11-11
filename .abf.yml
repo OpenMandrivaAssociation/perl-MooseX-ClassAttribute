@@ -1,2 +1,4 @@
+removed_sources:
+  MooseX-ClassAttribute-0.26.tar.gz: a6cdb29959dba4c9d3211f17af80847c3bcb80e0
 sources:
-  "MooseX-ClassAttribute-0.26.tar.gz": a6cdb29959dba4c9d3211f17af80847c3bcb80e0
+  MooseX-ClassAttribute-0.27.tar.gz: def13b08d0e79202ede65e3c23fb8735fdfbac2a
